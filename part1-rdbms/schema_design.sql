@@ -30,35 +30,20 @@ insert into products values
 ('P017', 'Monitor', 'Electronics', 12000);
 
 
-/* offices table */
-create table offices (
-    office_id varchar(10) primary key,
-    office_address text not null
-);
-
-insert into offices values
-('O001', 'Delhi Office, Connaught Place, New Delhi - 110001'),
-('O002', 'South Zone, MG Road, Bangalore - 560001'),
-('O003', 'Mumbai HQ, Nariman Point, Mumbai - 400021'),
-('O004', 'Chennai Branch, Anna Salai, Chennai - 600002'),
-('O005', 'Hyderabad Office, Banjara Hills, Hyderabad - 500034');
-
-
 /* sales reps table */
 create table sales_reps (
     sales_rep_id varchar(10) primary key,
     sales_rep_name varchar(100) not null,
     sales_rep_email varchar(100) not null unique,
-    office_id varchar(10) not null,
-    foreign key (office_id) references offices(office_id)
+    office_address text not null,
 );
 
 insert into sales_reps values
-('SR08', 'Rahul', 'rahul@gmail.com', 'O001'),
-('SR09', 'Priya', 'priya@gmail.com', 'O002'),
-('SR10', 'Amit', 'amit@gmail.com', 'O003'),
-('SR12', 'Neha', 'neha@gmail.com', 'O004'),
-('SR13', 'Kiran', 'kiran@gmail.com', 'O005');
+('SR08', 'Rahul', 'rahul@gmail.com', 'Delhi Office, Connaught Place, New Delhi - 110001'),
+('SR09', 'Priya', 'priya@gmail.com', 'South Zone, MG Road, Bangalore - 560001'),
+('SR10', 'Amit', 'amit@gmail.com', 'Mumbai HQ, Nariman Point, Mumbai - 400021'),
+('SR12', 'Neha', 'neha@gmail.com', 'Chennai Branch, Anna Salai, Chennai - 600002'),
+('SR13', 'Kiran', 'kiran@gmail.com', 'Hyderabad Office, Banjara Hills, Hyderabad - 500034');
 
 
 /* orders table */
