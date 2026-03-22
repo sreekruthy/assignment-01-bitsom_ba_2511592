@@ -1,0 +1,81 @@
+[
+  {
+    "_id": "E1001",
+    "name": "iPhone 14",
+    "category": "Electronics",
+    "price": 75000,
+    "brand": "Apple",
+    "specifications": {
+      "storage": "128GB",
+      "ram": "6GB",
+      "battery": "3279mAh",
+      "voltage": "5V"
+    },
+    "warranty": {
+      "period": "1 year",
+      "type": "manufacturer"
+    },
+    "ratings": [5, 4, 5, 4]
+  },
+  {
+    "_id": "E1002",
+    "name": "Samsung Smart TV",
+    "category": "Electronics",
+    "price": 45000,
+    "brand": "Samsung",
+    "specifications": {
+      "screen_size": "55 inch",
+      "resolution": "4K",
+      "voltage": "220V"
+    },
+    "warranty": {
+      "period": "2 years",
+      "type": "manufacturer"
+    },
+    "ratings": [4, 4, 5]
+  },
+  {
+    "_id": "C2001",
+    "name": "Men's Casual Shirt",
+    "category": "Clothing",
+    "price": 1200,
+    "brand": "Levis",
+    "sizes": ["S", "M", "L", "XL"],
+    "material": "Cotton",
+    "color": "Blue",
+    "care_instructions": {
+      "wash": "Machine wash",
+      "dry": "Do not tumble dry"
+    }
+  },
+  {
+    "_id": "G3001",
+    "name": "Amul Milk 1L",
+    "category": "Groceries",
+    "price": 60,
+    "brand": "Amul",
+    "expiry_date": "2024-12-20",
+    "manufacture_date": "2024-12-15",
+    "nutritional_info": {
+      "calories": 42,
+      "protein": "3.4g",
+      "fat": "1g"
+    },
+    "storage": "Keep refrigerated"
+  },
+  {
+    "_id": "G3002",
+    "name": "Brown Bread",
+    "category": "Groceries",
+    "price": 45,
+    "brand": "Harvest Gold",
+    "expiry_date": "2024-12-25",
+    "manufacture_date": "2024-12-18",
+    "nutritional_info": {
+      "calories": 265,
+      "fiber": "7g",
+      "carbohydrates": "49g"
+    },
+    "ingredients": ["Wheat flour", "Water", "Yeast", "Salt"]
+  }
+]

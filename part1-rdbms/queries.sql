@@ -28,7 +28,7 @@ from orders o
 join order_items oi on o.order_id = oi.order_id
 join products p on oi.product_id = p.product_id
 group by o.order_id
-having order_value > 10000
+having sum(oi.quantity * p.unit_price) > 10000
 order by order_value desc;
 
 -- Q5: Identify any products that have never been ordered
